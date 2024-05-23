@@ -1,0 +1,114 @@
+body{
+  font-family: 'Times New Roman', Times, serif;
+  background-color:rgb(151, 160, 243);
+  margin: 0;
+}
+.container{
+  max-width: 800px;
+  border-radius: 10px;
+  border-color: rgb(143, 143, 245);
+  border-style: solid;
+  background-color: azure;
+  padding: 20px;
+  margin: 40px auto;
+}
+.App {
+  text-align: center;
+  padding: 20px;
+}
+.title{
+  color: rgb(67, 23, 168);
+  font-weight: bold;
+}
+.exercise-container{
+  margin-bottom: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.exercise-label{
+  margin-right: 6px;
+}
+.exercise-select{
+  padding: 5px;
+  border: 2px solid gray;
+  border-radius: 15px;
+}
+.diet-container{
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.diet-label{
+  margin-right: 7px;
+}
+.diet-input{
+  padding: 4px;
+  border: 2px solid gray;
+  border-radius: 10px;
+}
+.goal-container{
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.goal-label{
+  margin-right: 7px;
+}
+.goal-input{
+  padding: 4px;
+  border: 2px solid gray;
+  border-radius: 10px;
+}
+.steps-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.steps-label{
+  margin-right: 7px;
+}
+.steps-input{
+  padding: 4px;
+  border: 2px solid gray;
+  border-radius: 10px;
+}
+.participant-form{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+.participant-form input[type = "text"],
+.participant-form input[type = "number"],
+.participant-form button{
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.participant-form button{
+ background-color: #4340e7;
+ color: azure;
+ cursor: pointer;
+ border: none;
+}
+.participant-form button:hover {
+  background-color: #1859a0;
+  font-size: medium;
+}
+ul{
+  list-style-type: none;
+  padding: 0px;
+}
+li {
+  margin: 5px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
