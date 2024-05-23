@@ -58,6 +58,7 @@ function App() {
                       <option value="Lunge">Lunge</option>
                       <option value="Bent row">Bent row</option>
                       <option value="Plank">Plank</option>
+                      <option value="Yoga">Yoga</option>
                   </select>
               </div>
               <div className="diet-container">

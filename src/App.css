@@ -1,8 +1,9 @@
 body{
   font-family: 'Times New Roman', Times, serif;
-  background-color:rgb(151, 160, 243);
+  background-color: rgb(151, 160, 243);
   margin: 0;
 }
+
 .container{
   max-width: 800px;
   border-radius: 10px;
@@ -12,85 +13,90 @@ body{
   padding: 20px;
   margin: 40px auto;
 }
+
 .App {
   text-align: center;
   padding: 20px;
 }
+
 .title{
   color: #09068b;
   font-weight: bold;
 }
-.exercise-container{
-  margin-bottom: 7px;
+
+.exercise-container,
+.diet-container,
+.goal-container,
+.steps-container {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 7px;
 }
+
 .exercise-label{
-  margin-right: 0px;
-  padding-left: 30px;
+  margin-right: 15px;
+  margin-left: 45px;
 }
+
 .exercise-select{
   padding: 5px;
   border: 2px solid gray;
   border-radius: 15px;
-  margin-left: 55px;
   width: 180px;
+  outline: none;
+  color: gray;
 }
-.diet-container{
-  margin-bottom: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 .diet-label{
   margin-right: 10px;
-  padding-left: 140px;
-  margin-left: 5px;
+  margin-left: 60px;
 }
+
 .diet-input{
   padding: 4px;
   border: 2px solid gray;
   border-radius: 10px;
-  margin-right: 85px;
+  width: 180px;
+  outline: none;
 }
-.goal-container{
-  margin-bottom: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 .goal-label{
   margin-right: 9px;
   margin-left: 57px;
 }
+
 .goal-input{
   padding: 4px;
   border: 2px solid gray;
   border-radius: 10px;
+  outline: none;
+  width: 180px;
 }
-.steps-container{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 .steps-label{
   margin-right: 7px;
 }
+
 .steps-input{
   padding: 4px;
   border: 2px solid gray;
   border-radius: 10px;
+  outline: none;
+  width: 180px;
+  color: gray;
 }
+
 .participant-form{
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 20px;
   gap: 10px;
 }
-.participant-form input[type = "text"],
-.participant-form input[type = "number"],
+
+.participant-form input[type="text"],
+.participant-form input[type="number"],
 .participant-form button{
   border: 2px solid #ddd;
   border-radius: 5px;
@@ -98,20 +104,24 @@ body{
   padding: 10px;
   box-sizing: border-box;
 }
+
 .participant-form button{
- background-color: #4340e7;
- color: azure;
- cursor: pointer;
- border: none;
+  background-color: #4340e7;
+  color: azure;
+  cursor: pointer;
+  border: none;
 }
+
 .participant-form button:hover {
   background-color: #1859a0;
   font-size: medium;
 }
+
 ul{
   list-style-type: none;
   padding: 0px;
 }
+
 li {
   margin: 5px;
   padding: 10px;
@@ -119,3 +129,30 @@ li {
   border-radius: 5px;
 }
 
+/* Media query for small screens */
+@media (max-width: 600px) {
+  .exercise-container,
+  .diet-container,
+  .goal-container,
+  .steps-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .exercise-label,
+  .diet-label,
+  .goal-label,
+  .steps-label {
+    margin: 0 0 5px 0;
+    width: auto; /* Ensure labels take only necessary width */
+    text-align: left; /* Align text to the left */
+  }
+
+  .exercise-select,
+  .diet-input,
+  .goal-input,
+  .steps-input {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+}
