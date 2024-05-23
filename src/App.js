@@ -62,7 +62,7 @@ function App() {
               </div>
               <div className="diet-container">
                   <label className="diet-label">
-                      Enter Customized Diet Plan:
+                      Set Diet Plan:
                   </label>
                   <input
                       type="text"

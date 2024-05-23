@@ -17,7 +17,7 @@ body{
   padding: 20px;
 }
 .title{
-  color: rgb(67, 23, 168);
+  color: #09068b;
   font-weight: bold;
 }
 .exercise-container{
@@ -27,12 +27,15 @@ body{
   justify-content: center;
 }
 .exercise-label{
-  margin-right: 6px;
+  margin-right: 0px;
+  padding-left: 30px;
 }
 .exercise-select{
   padding: 5px;
   border: 2px solid gray;
   border-radius: 15px;
+  margin-left: 55px;
+  width: 180px;
 }
 .diet-container{
   margin-bottom: 5px;
@@ -41,12 +44,15 @@ body{
   justify-content: center;
 }
 .diet-label{
-  margin-right: 7px;
+  margin-right: 10px;
+  padding-left: 140px;
+  margin-left: 5px;
 }
 .diet-input{
   padding: 4px;
   border: 2px solid gray;
   border-radius: 10px;
+  margin-right: 85px;
 }
 .goal-container{
   margin-bottom: 5px;
@@ -55,7 +61,8 @@ body{
   justify-content: center;
 }
 .goal-label{
-  margin-right: 7px;
+  margin-right: 9px;
+  margin-left: 57px;
 }
 .goal-input{
   padding: 4px;

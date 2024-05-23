@@ -4,8 +4,9 @@
 }
 
 h2 {
-    color: #4340e7;
-    font-weight: bold;
+    color: #09068b;
+    font-style: normal;
+    font-weight: bolder;
 }
 
 table {
@@ -33,5 +34,19 @@ tr:hover {
 }
 
 /* Responsive styles */
+@media screen and (max-width: 600px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
 
-
+    /* Optional: make header sticky for better readability */
+    th {
+        position: -webkit-sticky; /* for Safari */
+        position: sticky;
+        top: 0;
+        background-color: #4340e7;
+        z-index: 1;
+    }
+}
